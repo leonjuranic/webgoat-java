@@ -101,6 +101,9 @@ public class ViewProfile extends DefaultLessonAction
 					+ "FROM employee,ownership WHERE employee.userid = ownership.employee_id and "
 					+ "ownership.employer_id = " + userId + " and ownership.employee_id = " + subjectUserId;
 
+			String query = "SELECT employee.* "
+					+ "FROM employee,ownership WHERE employee.userid = ownership.employee_id and "
+					+ "ownership.employer_id = " + userId + " and ownership.employee_id = " + subjectUserId;
 			try
 			{
 				Statement answer_statement = WebSess.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
