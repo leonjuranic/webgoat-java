@@ -154,6 +154,7 @@ public class ViewProfile extends DefaultLessonAction
 				Statement answer_statement = WebSession.getConnection(s)
 						.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
 				ResultSet answer_results = answer_statement.executeQuery(query);
+				ResultSet answer_results = answer_statement.executeQuery(query);
 				if (answer_results.next())
 				{
 					// Note: Do NOT get the password field.
