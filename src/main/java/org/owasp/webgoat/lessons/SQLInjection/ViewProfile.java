@@ -157,6 +157,7 @@ public class ViewProfile extends DefaultLessonAction
 				ResultSet answer_results = answer_statement.executeQuery(query);
 				ResultSet answer_results = answer_statement.executeQuery(query);
 				ResultSet answer_results = answer_statement.executeQuery(query);
+				ResultSet answer_results = answer_statement.executeQuery(query);
 				if (answer_results.next())
 				{
 					// Note: Do NOT get the password field.
